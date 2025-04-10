@@ -2,6 +2,10 @@
 
 A beautiful, responsive Todo List application with glassmorphism design and animated backgrounds.
 
+## Demo
+
+🚀 **Live Demo:** [https://vitthalr.github.io/todolist/](https://vitthalr.github.io/todolist/)
+
 ## Features
 
 - ✨ Modern UI with glassmorphism effect
