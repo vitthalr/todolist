@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+    </div>
+    
+    <div class="container">
+        <div class="glass-card">
+            <h1>Todo List</h1>
+            
+            <div class="input-container">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <button id="add-task-btn">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            
+            <ul id="task-list"></ul>
+            
+            <div class="list-info">
+                <span id="tasks-counter">0 tasks left</span>
+                <button id="clear-completed">Clear Completed</button>
+            </div>
+            
+            <div class="color-picker-container">
+                <label for="background-color">Background:</label>
+                <input type="color" id="background-color" value="#0f172a">
+                <button id="reset-color">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="celebration-container" class="animation-container"></div>
+    <div id="task-added-container" class="animation-container"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
